@@ -23,7 +23,7 @@ else if(randomNumber1 === 5) {
     document.querySelector("img.dice1").setAttribute("src", "./assests/images/dice5.png");
 }
 
-else {
+else if(randomNumber1 === 5) {
     document.querySelector("img.dice1").setAttribute("src", "./assests/images/dice6.png");
 }
 
@@ -52,8 +52,8 @@ else if(randomNumber2 === 5) {
     document.querySelector("img.dice2").setAttribute("src", "./assests/images/dice5.png");
 }
 
-else {
-    document.querySelector("img.dice1").setAttribute("src", "./assests/images/dice6.png");
+else if(randomNumber2 === 5) {
+    document.querySelector("img.dice2").setAttribute("src", "./assests/images/dice6.png");
 }
 
 
