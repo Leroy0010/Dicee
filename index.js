@@ -23,14 +23,14 @@ else if(randomNumber1 === 5) {
     document.querySelector("img.dice1").setAttribute("src", "./assests/images/dice5.png");
 }
 
-else if(randomNumber1 === 5) {
+else if(randomNumber1 === 6) {
     document.querySelector("img.dice1").setAttribute("src", "./assests/images/dice6.png");
 }
 
 
 
 var randomNumber2 = Math.floor((Math.random() * 6)) + 1;
-
+console.log(randomNumber1);
 
 if(randomNumber2 === 1) {
     document.querySelector("img.dice2").setAttribute("src", "./assests/images/dice1.png");
@@ -66,6 +66,6 @@ else if(randomNumber1 > randomNumber2){
     document.getElementById("heading").textContent = "🚩Player 1 Wins";
 }
 
-else{
+else if (randomNumber1 < randomNumber2) {
     document.getElementById("heading").textContent = "Player 2 Wins🚩";
 }
